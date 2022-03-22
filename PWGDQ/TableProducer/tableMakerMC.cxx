@@ -548,10 +548,10 @@ struct TableMakerMC {
             if (fNewLabels.find(m) != fNewLabels.end()) {
               mothers.push_back(fNewLabels.find(m)->second);
             }
-          } else {
-            cout << "Mother label (" << m << ") exceeds the McParticles size (" << mcTracks.size() << ")" << endl;
-            cout << " Check the MC generator" << endl;
-          }
+          } //else {
+           // cout << "Mother label (" << m << ") exceeds the McParticles size (" << mcTracks.size() << ")" << endl;
+           // cout << " Check the MC generator" << endl;
+          //}
         }
       }
 
@@ -565,10 +565,10 @@ struct TableMakerMC {
             if (fNewLabels.find(d) != fNewLabels.end()) {
               daughters.push_back(fNewLabels.find(d)->second);
             }
-          } else {
-            cout << "Daughter label (" << d << ") exceeds the McParticles size (" << mcTracks.size() << ")" << endl;
-            cout << " Check the MC generator" << endl;
-          }
+          } //else {
+            //cout << "Daughter label (" << d << ") exceeds the McParticles size (" << mcTracks.size() << ")" << endl;
+            //cout << " Check the MC generator" << endl;
+          //}
         }
       }
       int daughterRange[2] = {-1, -1};
